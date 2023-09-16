@@ -1,0 +1,39 @@
+.banner
+  &-img 
+    background-color: $color-blue-dark
+    grid-column: full-start / col-end 4
+    display: grid
+    grid-template-columns: repeat(16, 1fr)
+    grid-template-rows: repeat(24, 1fr)
+    background: url('img/Background.png') center no-repeat
+    &__img-1
+      width: 100%
+      grid-column: 4 / 15
+      grid-row: 3 / 12
+
+    &__img-2
+      width: 100%
+      grid-column: 6 / -1
+      grid-row: 11 / 23
+      transform: translateX(2.5rem)
+    
+    
+       
+    
+  &-text
+    padding: 0 4vw
+    display: grid
+    align-content: center
+    justify-items: start
+    // justify-: center
+    // align-items: center
+    background-color: $color-blue-dark
+    grid-column: col-start 5 / full-end
+    &__text
+      margin-bottom: 4rem
+
+  
+.banner-text .title-2
+  margin-bottom: 3rem
+ 
+      
