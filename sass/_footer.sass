@@ -1,3 +1,12 @@
 .footer
   background-color: $color-blue-dark
+  display: grid
   grid-column: full-start / full-end
+  grid-auto-rows: repeat(2, 1fr)
+  &__svg
+    grid-row: 1 / 2
+  &__links
+    grid-row: 2 / 3
+    
+  
+  
