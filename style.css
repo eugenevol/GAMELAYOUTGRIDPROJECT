@@ -156,7 +156,23 @@ body {
 .sidebar {
   background-color: #425844;
   grid-column: sidebar-start/sidebar-end;
-  grid-row: 1/-1; }
+  grid-row: 1/-1;
+  padding-top: 2.5rem; }
+
+.humburger {
+  border: 0;
+  background-color: #F5F5F5;
+  height: 0.2rem;
+  width: 4.5rem; }
+  .humburger::before, .humburger::after {
+    content: "";
+    border: 0;
+    background-color: #F5F5F5;
+    height: 0.2rem;
+    width: 4.5rem;
+    display: block; }
+  .humburger::after {
+    transform: translateY(2rem); }
 
 .gallery {
   background-color: #101D2C;
@@ -215,13 +231,30 @@ body {
 
 .footer {
   background-color: #101D2C;
-  display: grid;
   grid-column: full-start/full-end;
-  grid-auto-rows: repeat(2, 1fr); }
+  display: grid;
+  grid-template-rows: auto minmax(auto, 1fr);
+  padding: 8rem 3rem;
+  border-top: solid 0.3rem #F5F5F5;
+  grid-row-gap: 8rem; }
   .footer__svg {
-    grid-row: 1/2; }
+    display: block;
+    grid-row: 1/2;
+    width: 12rem;
+    height: 4.1rem;
+    justify-self: center;
+    margin: auto auto; }
   .footer__links {
-    grid-row: 2/3; }
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(17rem, 1fr));
+    grid-gap: 3.6rem; }
+  .footer__link {
+    color: #F5F5F5;
+    font-size: 1.6rem;
+    font-weight: 300;
+    text-decoration: none;
+    text-align: center;
+    line-height: 2.2rem; }
 
 .btn {
   font-size: 1.6rem;
