@@ -157,7 +157,9 @@ body {
   background-color: #425844;
   grid-column: sidebar-start/sidebar-end;
   grid-row: 1/-1;
-  padding-top: 2.5rem; }
+  padding-top: 3.5rem;
+  display: flex;
+  justify-content: center; }
 
 .humburger {
   border: 0;
@@ -171,8 +173,10 @@ body {
     height: 0.2rem;
     width: 4.5rem;
     display: block; }
+  .humburger::before {
+    transform: translateY(-1.5rem); }
   .humburger::after {
-    transform: translateY(2rem); }
+    transform: translateY(1.5rem); }
 
 .gallery {
   background-color: #101D2C;
@@ -233,7 +237,7 @@ body {
   background-color: #101D2C;
   grid-column: full-start/full-end;
   display: grid;
-  grid-template-rows: auto minmax(auto, 1fr);
+  grid-template-rows: auto auto;
   padding: 8rem 3rem;
   border-top: solid 0.3rem #F5F5F5;
   grid-row-gap: 8rem; }
