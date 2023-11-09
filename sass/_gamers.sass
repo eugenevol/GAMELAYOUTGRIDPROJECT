@@ -4,6 +4,9 @@
   display: flex
   justify-content: center
   align-items: center
+  @include respond(tab-port)
+    grid-column: full-start / full-end
+    padding: 5rem 6rem
 
   & img
     margin-right: 2rem

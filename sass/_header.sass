@@ -7,6 +7,9 @@
   justify-items: start
   padding: 5rem 6rem
   background: url('/img/header_bg.png')
+  @include respond(tab-port)
+    grid-column: full-start / full-end
+    
   
   &__svg
     grid-row: 1 / 2

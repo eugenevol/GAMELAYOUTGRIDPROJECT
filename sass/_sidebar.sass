@@ -5,6 +5,13 @@
   padding-top: 3.5rem
   display: flex
   justify-content: center
+  @include respond(tab-land)
+    grid-row: 1 / 2
+    grid-column: full-start / full-end
+    justify-content: end
+    padding: 0 3.5rem 0 0
+    align-items: center
+    
   
 
 
