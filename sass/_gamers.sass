@@ -1,12 +1,16 @@
 .gamers
   background-color: $color-blue-dark
   grid-column: col-start 7 / full-end
+  grid-row: 1/2
   display: flex
   justify-content: center
   align-items: center
   // grid-template-columns: max-content
+  @include respond(tab-land)
+    grid-row: 2/3
   @include respond(tab-port)
     grid-column: full-start / full-end
+    grid-row: 3/4
     padding: 5rem 6rem
     // grid-template-columns: repeat(auto-fit,minmax(25rem,1fr))
 
