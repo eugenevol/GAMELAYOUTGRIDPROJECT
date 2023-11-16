@@ -205,6 +205,10 @@ body {
     display: grid;
     grid-template-rows: repeat(4, auto);
     grid-row-gap: 4rem; }
+    @media only screen and (max-width: 830px) {
+      .gamers__rows {
+        display: flex;
+        flex-wrap: wrap; } }
     .gamers__rows .name {
       font-size: 1.6rem;
       color: white;
